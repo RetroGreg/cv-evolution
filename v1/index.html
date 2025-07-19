@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="CV Grégoire Dupont" >
+    <title>CV Grégoire Dupont</title>
+
+    <!--  Google Fonts link -->
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'" >
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap"
+            rel="stylesheet" >
+    </noscript>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css" >
+</head>
+
+<body id="top">
+    <!-- Header -->
+    <header class="centered-header">
+        <!-- Dark mode switch -->
+        <label class="theme-switch" aria-label="Basculer le mode sombre" title="Basculer le mode sombre">
+            <input type="checkbox" class="theme-switch__checkbox" aria-label="Basculer le mode sombre" >
+            <div class="theme-switch__container">
+                <div class="theme-switch__clouds"></div>
+                <div class="theme-switch__stars-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+                <div class="theme-switch__circle-container">
+                    <div class="theme-switch__sun-moon-container">
+                        <div class="theme-switch__moon">
+                            <div class="theme-switch__spot"></div>
+                            <div class="theme-switch__spot"></div>
+                            <div class="theme-switch__spot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </label>
+        <div class="header-content">
+            <div class="header-left">
+                <img src="images/Capture_ecran_2024-09-11_091510.webp" alt="photo gregoire" class="profile-photo" >
+                <div class="name-age">
+                    <h1>Grégoire Dupont</h1>
+                    <p id="typewriter">
+                        <span id="text"></span><span id="cursor">|</span>
+                    </p>
+                </div>
+            </div>
+            <div class="header-middle">
+                <div class="skills-section">
+                    <h3>Langages informatiques</h3>
+                    <div class="skills-icons">
+                        <div class="icon">
+                            <img src="icons/html5.svg" alt="HTML" title="HTML5" >
+                        </div>
+                        <div class="icon">
+                            <img src="icons/css3.svg" alt="CSS" title="CSS3" >
+                        </div>
+                        <div class="icon">
+                            <img src="icons/javascript.svg" alt="JavaScript" title="JavaScript" >
+                        </div>
+                        <div class="icon">
+                            <img src="icons/iconc.svg" alt="C#" title="C#">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-section">
+                    <h3>Logiciels</h3>
+                    <div class="skills-icons">
+                        <div class="icon">
+                            <img src="icons/visualstudio.svg" alt="Visual Studio" title="Visual Studio" >
+                        </div>
+                        <div class="icon">
+                            <img src="icons/gimp.svg" alt="GIMP" title="Gimp" >
+                        </div>
+                        <div class="icon">
+                            <img src="icons/adobepremiere.svg" alt="Adobe Premiere" title="Adobe Premiere" >
+                        </div>
+                        <div class="icon">
+                            <img src="icons/excel.svg" alt="Excel" title="Microsoft Excel">
+                        </div>
+                        <div class="icon">
+                            <img src="icons/word.svg" alt="Word" title="Microsoft Word">
+                        </div>
+                        <div class="icon">
+                            <img src="icons/iconcanva.svg" alt="Canva" title="Canva">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-network">
+                    <h3>Mon réseau</h3>
+                    <div class="header-right social-icons">
+                        <a href="https://www.linkedin.com/in/gr%C3%A9goire-dupont-801355328/" target="_blank"
+                            class="linkedin-link" aria-label="Lien vers le profil LinkedIn de Grégoire Dupont"
+                            title="LinkedIn - Grégoire Dupont">
+                            <svg height="20" viewBox="0 0 72 72" width="20" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path
+                                        d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z"
+                                        fill="#007EBB"></path>
+                                    <path
+                                        d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z"
+                                        fill="#FFF"></path>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/RetroGreg" target="_blank" class="github-link"
+                            aria-label="Lien vers le profil GitHub de Grégoire Dupont" title="GitHub - Grégoire Dupont">
+                            <svg width="20" height="20" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+                                    fill="#1B1F23"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/@retrogreg" target="_blank" class="youtube-link"
+                            aria-label="Lien vers la chaîne YouTube de Grégoire Dupont" title="YouTube - RetroGreg">
+                            <img src="icons/youtube.svg" alt="YouTube" width="20" height="20">
+                        </a>
+                        <a href="mailto:dupontgregoire21@gmail.com" class="email-link"
+                            aria-label="Envoyer un email à Grégoire Dupont" title="Email - Grégoire Dupont">
+                            <span class="icon">✉️</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hamburger menu -->
+    <button class="menu-toggle">☰</button>
+    <nav class="sticky-nav">
+        <ul>
+            <li><a href="#aboutme">À propos de moi</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#experiences">Expériences Professionnelles</a></li>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#passions">Passions</a></li>
+            <li><a href="#languages">Langues</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <section id="aboutme" class="card">
+        <h2>À propos de moi</h2>
+        <p>
+            Je suis <strong>Développeur web</strong> en formation. <strong>Passionné, motivé, adaptable</strong> et toujours à la recherche de nouveaux défis. 
+            J'aime résoudre des problèmes complexes et je suis <strong>attentif aux détails.</strong> 
+            J'aime <strong>collaborer en équipe</strong> et je suis également toujours prêt à apprendre de nouvelles technologies.<br><br>
+           <span class="icon">🚗</span> PERMIS B 
+        </p>
+    </section>
+
+    <div class="separator"></div>
+
+    <section id="skills" class="card">
+        <h2>Champs de compétences</h2>
+        <ul class="skills">
+            <li>Montage et mise en ligne de vidéos sur YouTube</li>
+            <li>Connaissance des langages : HTML, CSS, JavaScript</li>
+            <li>Installation et configuration de l'environnement de travail</li>
+            <li>Maquetter des interfaces utilisateur web ou web mobile</li>
+            <li>Réaliser des interfaces utilisateur statiques web ou web mobile</li>
+            <li>
+                Développer la partie dynamique des interfaces utilisateur web ou web
+                mobile
+            </li>
+            <li>Mettre en place une base de données relationnelle</li>
+            <li>Développer des composants d’accès aux données SQL et NoSQL</li>
+            <li>Développer des composants métier côté serveur</li>
+            <li>
+                Documenter le déploiement d’une application dynamique web ou web
+                mobile
+            </li>
+        </ul>
+    </section>
+    <div class="separator"></div>
+
+    <section id="projects" class="card">
+        <h2>Projets</h2>
+        <div class="project-item">
+            <h3>"Matches Master" - Jeu de Nim</h3>
+            <p>Un jeu de stratégie inspiré du jeu de Nim, où les joueurs retirent des allumettes d'une pile en suivant des règles spécifiques.</p>
+            <img src="images/matchemaster.webp" alt="Matches Master Game" title="Matches Master Game" class="project-image" width="511" height="397">
+                        <ul>
+                <li><strong>Technologies :</strong> C#, .NET</li>
+                <li><strong>Objectifs :</strong> Développer un jeu de stratégie interactif.</li>
+                <li><strong>Challenges :</strong> Implémentation d’un algorithme d'intelligence artificielle pour simuler un adversaire compétent.</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <section id="experiences" class="card">
+        <h2>Expériences Professionnelles</h2>
+        <ul>
+            <li>
+                Depuis septembre 2024 : En formation Dev Web / Web Mobile chez Simplon Boulogne sur Mer
+            </li>
+            <li>
+                Mai 2020 - Février 2024 : Diverses missions d'intérim
+                <ul>
+                    <li>Application du protocole COVID chez VOSSLOH et SPECITUBES</li>
+                    <li>Conducteur de ligne chez VALEO</li>
+                    <li>Agent de production polyvalent en agro-alimentaire</li>
+                </ul>
+            </li>
+            <li>
+                Octobre 2019 – Mars 2020 : Monteur de soudeuses industrielles pour
+                l’ensachage chez BERNHARDT
+            </li>
+            <li>
+                Avril 2019 à octobre 2019 : Mécanicien-régleur sur lignes de
+                productions CROWN EMBALLAGE
+            </li>
+            <li>
+                De janvier 2016 à avril 2019 :
+                <ul>
+                    <li>
+                        Chercheur de fuites en eau potable puis technicien de maintenance
+                        des postes de relèvement en assainissement chez VEOLIA de janvier
+                        2016 à décembre 2018
+                    </li>
+                    <li>Opérateur de laminoir chez SPECITUBES</li>
+                </ul>
+            </li>
+            <li>
+                De mai 2014 à janvier 2016 : Diverses missions d’intérim chez TRB,
+                VALOFISH et THYSSENKRUPP
+            </li>
+            <li>
+                De septembre 2011 à avril 2014 : Travaux de modernisation chez AFA 77
+                puis technicien de maintenance d’ascenseur
+            </li>
+            <li>
+                De septembre 2009 à septembre 2011 : APPRENTISSAGE chez OTIS agence de
+                Coquelles (62) et formation CFA de TOURS (37)
+            </li>
+            <li>
+                2007 – 2009 : diverses missions d’intérim
+                <ul>
+                    <li>Agent de conditionnement sur ligne pour SACEL</li>
+                    <li>
+                        Contrôle produit final, palettiseur, conditionnement produits
+                        finis pour Desvres SA
+                    </li>
+                    <li>
+                        Agent de fabrication chez NOVANDIE et CONTINENTALE NUTRITION
+                    </li>
+                    <li>Électricien aux Carrières du Boulonnais</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <div class="separator"></div>
+
+    <section id="formation" class="card">
+        <h2>Formation</h2>
+        <ul>
+            <li>
+                Juin 2011 : Obtention du diplôme de technicien de modernisation et
+                réparation des ascenseurs en alternance pour OTIS au CFA DES Douets de
+                TOURS
+            </li>
+            <li>
+                2008 : Formation de technicien de maintenance industrielle AFPA de
+                Creil
+            </li>
+            <li>
+                2004/2006 : BTS Fluide énergie environnement, Option génie
+                frigorifique, lycée Branly de Boulogne sur mer
+            </li>
+            <li>
+                2002/2004 : BAC professionnel énergétique, Option froid et
+                climatisation au lycée Branly de Boulogne sur mer
+            </li>
+            <li>
+                1999/2002 : BEP et CAP électrotechnique au lycée Clerc d’Outreau
+            </li>
+        </ul>
+    </section>
+
+    <div class="separator"></div>
+
+    <section id="passions" class="card">
+        <h2>Passions</h2>
+        <ul>
+            <li>Création et montage de vidéos</li>
+            <li>Informatique</li>
+            <li>Jeux vidéo</li>
+            <li>Arts Créatifs</li>
+            <li>Univers pop culture</li>
+        </ul>
+    </section>
+
+    <div class="separator"></div>
+
+    <section id="languages" class="card">
+        <h2>Langues</h2>
+        <ul>
+            <li>Français : langue maternelle</li>
+            <li>Anglais : bon niveau écrit et parlé</li>
+        </ul>
+    </section>
+
+    <div class="star-field"></div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#top" class="back-to-top">⬆️ Retour en haut</a>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
