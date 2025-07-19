@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Evolution - De HTML basique à moderne</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #3b82f6, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.5)); }
+            to { filter: drop-shadow(0 0 30px rgba(6, 182, 212, 0.8)); }
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            color: #888;
+            margin-bottom: 3rem;
+        }
+        
+        .timeline {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 4rem 0;
+            padding: 0 2rem;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #06b6d4);
+            transform: translateY(-50%);
+            z-index: -1;
+        }
+        
+        .version {
+            background: #1a1a1a;
+            border: 2px solid #333;
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            width: 45%;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .version:hover {
+            transform: translateY(-10px);
+            border-color: #3b82f6;
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
+        }
+        
+        .version h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .version.v1 h2 {
+            color: #3b82f6;
+        }
+        
+        .version.v2 h2 {
+            color: #06b6d4;
+        }
+        
+        .date {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .tech-stack {
+            margin: 1.5rem 0;
+        }
+        
+        .tech-stack h3 {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-top: 0.5rem;
+        }
+        
+        .tag {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .cta {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(45deg, #3b82f6, #06b6d4);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .cta:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.5);
+        }
+        
+        .arrow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            color: #3b82f6;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 0.3; transform: translate(-50%, -50%) scale(1); }
+            50% { opacity: 1; transform: translate(-50%, -50%) scale(1.2); }
+        }
+        
+        .features {
+            margin-top: 4rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature {
+            background: #1a1a1a;
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid #333;
+        }
+        
+        .feature h3 {
+            color: #3b82f6;
+            margin-bottom: 1rem;
+        }
+        
+        .feature p {
+            color: #aaa;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .subtitle { font-size: 1.2rem; }
+            .timeline {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            .timeline::before {
+                left: 50%;
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                height: 100%;
+            }
+            .version {
+                width: 100%;
+            }
+            .arrow {
+                top: -30px;
+                transform: translate(-50%, 0) rotate(90deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CV Evolution</h1>
+        <p class="subtitle">Mon parcours de développeur en 9 mois</p>
+        
+        <div class="timeline">
+            <div class="version v1">
+                <h2>Version 1.0</h2>
+                <p class="date">Septembre 2024</p>
+                <p>Mon premier CV web créé en début de formation. HTML et CSS basiques, mais fonctionnel !</p>
+                
+                <div class="tech-stack">
+                    <h3>Technologies</h3>
+                    <div class="tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript vanilla</span>
+                    </div>
+                </div>
+                
+                <a href="v1/index.html" class="cta">Voir la V1 →</a>
+            </div>
+            
+            <div class="arrow">→</div>
+            
+            <div class="version v2">
+                <h2>Version 2.0</h2>
+                <p class="date">Juin 2025</p>
+                <p>Refonte complète avec les compétences acquises. Design moderne et code optimisé !</p>
+                
+                <div class="tech-stack">
+                    <h3>Technologies</h3>
+                    <div class="tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3 avancé</span>
+                        <span class="tag">JavaScript ES6+</span>
+                        <span class="tag">Responsive Design</span>
+                    </div>
+                </div>
+                
+                <a href="v2/index.html" class="cta">Voir la V2 →</a>
+            </div>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>📈 Évolution technique</h3>
+                <p>Passage du CSS inline aux modules, JavaScript moderne, et animations fluides.</p>
+            </div>
+            <div class="feature">
+                <h3>🎨 Design moderne</h3>
+                <p>Interface repensée avec une approche mobile-first et des interactions soignées.</p>
+            </div>
+            <div class="feature">
+                <h3>♿ Accessibilité</h3>
+                <p>Respect des standards WCAG, navigation au clavier, et optimisation SEO.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
