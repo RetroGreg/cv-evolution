@@ -49,7 +49,7 @@ Ce projet illustre mon évolution technique durant ma formation de développeur 
 
 **Grégoire**
 - GitHub: [@RetroGreg](https://github.com/RetroGreg)
-- Portfolio: [retrogreg.dev](https://retrogreg.dev)
+- Portfolio: [retrogreg.dev](https://gregoire-dupont.vercel.app/)
 
 ## 📜 Licence
 
